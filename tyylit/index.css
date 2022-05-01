@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  background-image: url("../kuvat/sushipic1.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-family:'Courgette', cursive;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 60px;
+  left: 120px;
+  font-size: 40px;
+}
+
+.centered {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 65px;
+  color: #e0dfdc;
+  letter-spacing: .1em;
+  text-shadow: 
+    0 -1px 0 #fff, 
+    0 1px 0 #2e2e2e, 
+    0 2px 0 #2c2c2c, 
+    0 3px 0 #2a2a2a, 
+    0 4px 0 #282828, 
+    0 5px 0 #262626, 
+    0 6px 0 #242424, 
+    0 7px 0 #222, 
+    0 8px 0 #202020, 
+    0 9px 0 #1e1e1e, 
+    0 10px 0 #1c1c1c, 
+    0 11px 0 #1a1a1a, 
+    0 12px 0 #181818, 
+    0 13px 0 #161616, 
+    0 14px 0 #141414, 
+    0 15px 0 #121212, 
+    0 22px 30px rgba(0, 0, 0, 0.9);
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+	margin: 10px 0;
+  color: white;
+  transition: color .5s;
+}
+a:hover {
+  color: green;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 60px;
+  right: 120px;
+  font-size: 40px;;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+} 
